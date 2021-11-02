@@ -1,38 +1,83 @@
 .App {
   text-align: center;
+  background-image: url(images/Best-Winter-Photos.jpg);
+  background-size: contain;
+  background-position: top;
+  min-height: 90vh;
+  padding: 25px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchBox {
+  width: 90%;
+  height: 48px;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 30px;
+  color: #313131;
+
+  outline: none;
+  border: none;
+  box-shadow: 3px 3px rgb(0 0 0 / 30%);
+}
+.location {
+  font-size: 55px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  margin-top: 70px;
+}
+.date {
+  font-size: 33px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  font-style: oblique;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.temperature {
+  font-size: 128px;
+  font-weight: bolder;
+  text-shadow: 3px 3px rgb(50 50 70 / 50%);
+  margin-top: 48 px;
+  color: #fff;
+  /* box-sizing: border-box; */
+  display: inline-block;
+  background-color: rgb(255 255 255 / 42%);
+  box-shadow: 3px 6px rgb(0 0 0 / 20%);
+  padding: 17px 47px;
+  border-radius: 25px;
+  margin-top: 55px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.temp{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.temp_sibling{
+  margin-top: 48 px;
+  font-weight: bolder;
+  text-shadow: 3px 3px rgb(50 50 70 / 50%);
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  background-color: rgb(255 255 255 / 42%);
+  box-shadow: 3px 6px rgb(0 0 0 / 20%);
+  padding: 17px 47px;
+  border-radius: 20px;
+  margin-top: 55px;
+
+}
+.min{
+  margin-right:  25px;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+.weather{
+  font-size: 80px;
+  font-weight: bolder;
+  color: #fff;
+  margin-top: 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
