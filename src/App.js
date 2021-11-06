@@ -2,6 +2,7 @@ import React , {useState , useEffect} from "react";
 import "./App.css";
 import moment from 'moment'
 import {format} from 'date-fns';
+import Map from "./component/map";
 const api = {
   key: "fff592fae2e8ed5526bbf703869c8305",
   base: "https://api.openweathermap.org/data/2.5/",
@@ -15,28 +16,11 @@ function App() {
     var date = new Date();
     var formattedDate = format( date, "MMMM dd , yyyy, H:mma");
     console.log("second console",formattedDate);
-  //  function getParsedDate(strDate) {
-  //     var strSplitDate = String(strDate).split(' ');
-  //     var date = new Date(strSplitDate[0]);
-  //     // alert(date);
-  //     var dd = date.getDate();
-  //     var mm = date.getMonth() + 1; //January is 0!
-  
-  //     var yyyy = date.getFullYear();
-  //     if (dd < 10) {
-  //         dd = '0' + dd;
-  //     }
-  //     if (mm < 10) {
-  //         mm = '0' + mm;
-  //     }
-  //     date =  dd + "-" + mm + "-" + yyyy;
-  //     return date.toString();
-  // }
-  // console.log("date" , getParsedDate(new Date()))
     useEffect(() => {
       fetch(`${api.base}weather?q=${city}&units=metric&appid=${api.key}`)
       .then(response => response.json())
       .then(data => (setResult(data)))
+      .catch(error =>(setResult()))
          } , [])
     const togelHandler=()=>{
       setShow(!show);
@@ -48,13 +32,14 @@ function App() {
         if(e.key ==="Enter"){
           fetch(`${api.base}weather?q=${city}&units=metric&appid=${api.key}`)
           .then(response => response.json())
-          .then(data => (setResult(data)));
+          .then(data => (setResult(data)))
+          .catch(error =>(setResult()))
   }
           
         }
     console.log("first console" ,new Date());
   return (
-    <div className={result?.main.temp <20?'App':'appSummer'}>
+    <div className={result?.main?.temp <20?'App':'appSummer'}>
       <input onChange={(e) =>{clickHandler(e)}}
        onKeyPress={(e)=>{keyHandler(e)}}
 
@@ -63,6 +48,8 @@ function App() {
         type={Text}
         placeHolder="Type City Name"
       ></input>
+   {result?.main? <div>
+      
       <div>
         <div className="location">{result?.name},{result?.sys.country} </div>
         <div className="date">{formattedDate}</div>
@@ -82,7 +69,14 @@ function App() {
           <div>sunrise: {moment.utc(result?.sys.sunrise).format().split("T")[1]}</div>
           <div>Sunset: {moment.utc(result?.sys.sunset).format().split("T")[1]}</div></>}
         </div>
-      </div>
+   </div>
+     <div className="map-div">
+       <Map/>
+     </div>
+      </div>:<div className ="Error" >
+        <div> Entered city not found
+         <br/>Enter a valid city</div>
+        </div>}
     </div>
   );
 };

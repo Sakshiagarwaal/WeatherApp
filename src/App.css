@@ -33,21 +33,21 @@
   font-size: 55px;
   color: #fff;
   text-align: center;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-shadow: 3px 1px rgba(50, 50, 70, 0.5);
   margin-top: 70px;
 }
 .date {
   font-size: 33px;
   color: #fff;
   text-align: center;
-  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-shadow: 3px 1px rgb(50 50 70 / 50%);
   font-style: oblique;
 }
 
 .temperature {
   font-size: 128px;
   font-weight: bolder;
-  text-shadow: 3px 3px rgb(50 50 70 / 50%);
+  text-shadow: 3px 1px rgb(50 50 70 / 50%);
   margin-top: 48 px;
   color: #fff;
   /* box-sizing: border-box; */
@@ -103,4 +103,16 @@
   color: #fff;
   margin-bottom: 18px;
   margin-top: 10px;
+}
+.Error{
+     margin-top: 200px;
+     font-size: 55px;
+     color: rgb(206, 25, 25);
+     text-shadow: 3px 1px rgb(9 43 47 / 50%);     
+}
+.map-div {
+  width: 60%;
+  height: auto;
+  margin: 10px auto;
+  background-color: white;
 }
