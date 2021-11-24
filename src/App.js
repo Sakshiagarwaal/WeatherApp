@@ -48,7 +48,7 @@ function App() {
         type={Text}
         placeHolder="Type City Name"
       ></input>
-   {result?.main? <div>
+   {result?.main  ? <div>
       
       <div>
         <div className="location">{result?.name},{result?.sys.country} </div>

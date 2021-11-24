@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background-image: url(images/Best-Winter-Photos.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: top;
   min-height: 90vh;
   padding: 25px;
@@ -24,7 +24,6 @@
   background-color: rgba(255, 255, 255, 0.5);
   font-size: 30px;
   color: #313131;
-
   outline: none;
   border: none;
   box-shadow: 3px 3px rgb(0 0 0 / 30%);
@@ -120,11 +119,17 @@
 {
   .temperature{
     font-size: 100px;
-    
+
   }
 }
 @media only screen and (max-width :500px){
      .map-div{
        width: 95%;
      }       
+}
+@media only screen and (max-width:500px){
+  .App{
+    background-size: cover;
+  }
+  
 }
