@@ -10,4 +10,5 @@ The graph was suppose to show real time data but those api's weren't available i
 
 ![Guwhati temperature](image.png)
 ![Jammu temperature](image-1.png)
-![contd. jammu temperature](image-2.png)
+
+![image-1](https://github.com/Sakshiagarwaal/WeatherApp/assets/93578171/3c783a25-c3bc-48fe-ad29-6966fd2d1c83)
