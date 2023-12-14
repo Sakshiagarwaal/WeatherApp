@@ -5,10 +5,30 @@ Variation of the background according to temperature is also provided .
 The frontend of the application is build using HTML , CSS and Reactjs. And the backend is taken from 3rd party (open weather api).
 
 #Desktop veiw of temperature in guwahati.
+
+
 ![image](https://github.com/Sakshiagarwaal/WeatherApp/assets/93578171/0a39f3f0-5399-47ef-8571-e9316a32a224)
 
+
+
 #Mobile view of temperature in Jammu. 
+
+
 ![image-1](https://github.com/Sakshiagarwaal/WeatherApp/assets/93578171/3c783a25-c3bc-48fe-ad29-6966fd2d1c83)
 
+
+
 #The following attached graph shows the maximum and minimum temperatures in Jammu.
+
+
 ![image-2](https://github.com/Sakshiagarwaal/WeatherApp/assets/93578171/0d7a4584-cefd-4146-8fdc-41597bcbeeb8)
+
+
+
+
+#Desktop veiw of temperature in Mumbai.
+
+
+![mumbaiSunnyImg](https://github.com/Sakshiagarwaal/WeatherApp/assets/93578171/40951e78-f3a7-48b1-a5bb-d65c0163f6cb)
+
+
