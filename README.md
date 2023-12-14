@@ -7,3 +7,7 @@ The frontend of the application is build using HTML , CSS and Reactjs. And the b
 
 ###Note
 The graph was suppose to show real time data but those api's weren't available in the free pack . 
+
+![Guwhati temperature](image.png)
+![Jammu temperature](image-1.png)
+![contd. jammu temperature](image-2.png)
